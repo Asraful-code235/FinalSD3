@@ -30,12 +30,13 @@ namespace WindowsFormsApp1
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -43,87 +44,90 @@ namespace WindowsFormsApp1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel1.Location = new System.Drawing.Point(208, 50);
+            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Location = new System.Drawing.Point(208, 61);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(310, 392);
+            this.panel1.Size = new System.Drawing.Size(313, 346);
             this.panel1.TabIndex = 6;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.button5.ForeColor = System.Drawing.Color.Green;
-            this.button5.Location = new System.Drawing.Point(191, 224);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(83, 34);
-            this.button5.TabIndex = 11;
-            this.button5.Text = "Log in";
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.button4.ForeColor = System.Drawing.Color.Green;
-            this.button4.Location = new System.Drawing.Point(39, 224);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(86, 34);
-            this.button4.TabIndex = 10;
-            this.button4.Text = "Sing up";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.textBox3.Location = new System.Drawing.Point(39, 183);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.PasswordChar = '*';
-            this.textBox3.Size = new System.Drawing.Size(235, 22);
-            this.textBox3.TabIndex = 9;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label6.Location = new System.Drawing.Point(88, 143);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(144, 29);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "Password";
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(74, 111);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(168, 22);
-            this.textBox1.TabIndex = 7;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label5.Location = new System.Drawing.Point(120, 72);
+            this.label5.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(126, 20);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(74, 29);
-            this.label5.TabIndex = 6;
+            this.label5.Size = new System.Drawing.Size(58, 25);
+            this.label5.TabIndex = 0;
             this.label5.Text = "User";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(102, 51);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 22);
+            this.textBox1.TabIndex = 1;
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(100, 83);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(105, 25);
+            this.label6.TabIndex = 2;
+            this.label6.Text = "Password";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(102, 116);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.PasswordChar = '*';
+            this.textBox3.Size = new System.Drawing.Size(100, 22);
+            this.textBox3.TabIndex = 3;
+            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.button4.Location = new System.Drawing.Point(213, 284);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(86, 34);
+            this.button4.TabIndex = 4;
+            this.button4.Text = "Sing up";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.button5.Location = new System.Drawing.Point(111, 154);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(83, 34);
+            this.button5.TabIndex = 5;
+            this.button5.Text = "Log in";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(149, 255);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(150, 17);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "Don\'t have a account?";
             // 
             // Login
             // 
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(762, 497);
             this.Controls.Add(this.panel1);
             this.Name = "Login";
@@ -150,12 +154,13 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Label label7;
     }
 }
 
