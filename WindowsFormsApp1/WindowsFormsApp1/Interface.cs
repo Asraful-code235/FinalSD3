@@ -20,7 +20,7 @@ namespace WindowsFormsApp1
         private void Home_Click(object sender, EventArgs e)
         {
             Login login = new Login();
-          login.Show();
+             login.Show();
             this.Hide();
         }
 
@@ -45,7 +45,38 @@ namespace WindowsFormsApp1
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
+          
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
            
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+           
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Student std = new Student();
+            std.Show();
+            this.Hide();
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            Department Dep = new Department();
+            Dep.Show();
+            this.Hide();
+        }
+
+       
     }
 }
