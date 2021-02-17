@@ -77,6 +77,11 @@ namespace WindowsFormsApp1
             this.Hide();
         }
 
-       
+        private void label4_Click(object sender, EventArgs e)
+        {
+            Account Ac = new Account();
+            Ac.Show();
+            this.Hide();
+        }
     }
 }

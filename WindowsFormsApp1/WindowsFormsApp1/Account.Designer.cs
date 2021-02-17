@@ -39,13 +39,13 @@ namespace WindowsFormsApp1
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.PaymentDV = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PaymentDV)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -131,15 +131,16 @@ namespace WindowsFormsApp1
             this.textBox4.Size = new System.Drawing.Size(145, 22);
             this.textBox4.TabIndex = 24;
             // 
-            // dataGridView1
+            // PaymentDV
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(272, 61);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(719, 526);
-            this.dataGridView1.TabIndex = 25;
+            this.PaymentDV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.PaymentDV.Location = new System.Drawing.Point(272, 61);
+            this.PaymentDV.Name = "PaymentDV";
+            this.PaymentDV.RowHeadersWidth = 51;
+            this.PaymentDV.RowTemplate.Height = 24;
+            this.PaymentDV.Size = new System.Drawing.Size(719, 526);
+            this.PaymentDV.TabIndex = 25;
+            this.PaymentDV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.PaymentDV_CellContentClick);
             // 
             // button1
             // 
@@ -176,6 +177,7 @@ namespace WindowsFormsApp1
             this.button4.TabIndex = 29;
             this.button4.Text = "Home";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label6
             // 
@@ -198,7 +200,7 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.PaymentDV);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
@@ -211,7 +213,8 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.label1);
             this.Name = "Account";
             this.Text = "Account";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.Account_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.PaymentDV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -229,7 +232,7 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView PaymentDV;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
