@@ -124,5 +124,22 @@ namespace WindowsFormsApp1
             }
             con.Close();
         }
+     
+        int count = 0;
+        private void timer1_Tick_1(object sender, EventArgs e)
+        {
+
+
+            slide1.BackgroundImage = null;
+            if (count < 2)
+            {
+                slide1.Image = imageList1.Images[count];
+                count++;
+            }
+            else
+            {
+                count = 0;
+            }
+        }
     }
 }
