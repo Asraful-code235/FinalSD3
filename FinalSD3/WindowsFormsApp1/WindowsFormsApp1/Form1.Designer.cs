@@ -40,6 +40,8 @@ namespace WindowsFormsApp1
             this.guna2GradientButton3 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton4 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.htmllabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.slide1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -217,11 +219,28 @@ namespace WindowsFormsApp1
             this.guna2GradientButton4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2GradientButton4.Click += new System.EventHandler(this.guna2GradientButton4_Click);
             // 
+            // htmllabel1
+            // 
+            this.htmllabel1.BackColor = System.Drawing.Color.Transparent;
+            this.htmllabel1.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.htmllabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.htmllabel1.Location = new System.Drawing.Point(52, 12);
+            this.htmllabel1.Name = "htmllabel1";
+            this.htmllabel1.Size = new System.Drawing.Size(345, 30);
+            this.htmllabel1.TabIndex = 14;
+            this.htmllabel1.Text = "IN SEARCH OF EXCILENCE";
+            // 
+            // timer2
+            // 
+            this.timer2.Enabled = true;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
             // Login
             // 
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(823, 529);
+            this.Controls.Add(this.htmllabel1);
             this.Controls.Add(this.guna2GradientButton4);
             this.Controls.Add(this.guna2GradientButton1);
             this.Controls.Add(this.slide1);
@@ -234,6 +253,7 @@ namespace WindowsFormsApp1
             this.Load += new System.EventHandler(this.Login_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.slide1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -262,6 +282,8 @@ namespace WindowsFormsApp1
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton3;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton4;
+        private Guna.UI2.WinForms.Guna2HtmlLabel htmllabel1;
+        private System.Windows.Forms.Timer timer2;
     }
 }
 

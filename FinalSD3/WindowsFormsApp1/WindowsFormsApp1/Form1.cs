@@ -61,10 +61,16 @@ namespace WindowsFormsApp1
         {
 
         }
+        int counter = 0;
+        int len = 0;
+        string txt;
 
         private void Login_Load_1(object sender, EventArgs e)
         {
-
+            txt = htmllabel1.Text;
+            len = txt.Length;
+            htmllabel1.Text = "";
+            timer2.Start();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -141,9 +147,25 @@ namespace WindowsFormsApp1
                 count = 0;
             }
         }
-
+       
         private void guna2GradientButton4_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            counter++;
+            if(counter >len)
+            {
+                timer2.Stop();
+                
+            }
+            else
+            {
+                htmllabel1.Text = txt.Substring(0, counter);
+            }
+           
 
         }
     }
