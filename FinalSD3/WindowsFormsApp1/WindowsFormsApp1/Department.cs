@@ -62,10 +62,16 @@ namespace WindowsFormsApp1
                 MessageBox.Show("somethig went missing");
             }
         }
-
+        int counter = 0;
+        int len = 0;
+        string txt;
         private void Department_Load(object sender, EventArgs e)
         {
             populate();
+            txt = label4.Text;
+            len = txt.Length;
+            label4.Text = "";
+            timer1.Start();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -128,6 +134,108 @@ namespace WindowsFormsApp1
             Interface Interface = new Interface();
             Interface.Show();
             this.Hide();
+        }
+
+        private void guna2GradientButton5_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (DepNameT.Text == "" || DepDesc.Text == "" || DepDuration.Text == "")
+                {
+                    MessageBox.Show("Missing information");
+                }
+                else
+                {
+                    con.Open();
+
+                    string query = "insert into DepartmentTb1 values('" + DepNameT.Text + "','" + DepDesc.Text + "','" + DepDuration.Text + "')";
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Added");
+                    con.Close();
+                    populate();
+                }
+
+            }
+            catch
+            {
+                MessageBox.Show("somethig went missing");
+            }
+        }
+
+        private void guna2GradientButton1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                if (DepNameT.Text == "" || DepDesc.Text == "" || DepDuration.Text == "")
+                {
+                    MessageBox.Show("Missing Data");
+                }
+                else
+                {
+                    con.Open();
+                    string query = "update DepartmentTb1 set DepDesc ='" + DepDesc.Text + "',DepDuration ='" + DepDuration.Text + "' where DepName='" + DepNameT.Text + "';";
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Department updated successfully");
+                    con.Close();
+                    populate();
+
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Ops ..Department not detected!");
+            }
+        }
+
+        private void guna2GradientButton2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                if (DepNameT.Text == "")
+                {
+                    MessageBox.Show("Enter The dapartment name!");
+                }
+                else
+                {
+                    con.Open();
+                    string query = "delete from DepartmentTb1 where DepName ='" + DepNameT.Text + "';";
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Deleted");
+                    con.Close();
+                    populate();
+
+                }
+            }
+            catch
+            {
+                MessageBox.Show(" Department not detected");
+            }
+        }
+
+        private void guna2GradientButton3_Click(object sender, EventArgs e)
+        {
+            Interface Interface = new Interface();
+            Interface.Show();
+            this.Hide();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            counter++;
+            if (counter > len)
+            {
+                timer1.Stop();
+
+            }
+            else
+            {
+                label4.Text = txt.Substring(0, counter);
+            }
         }
     }
 }

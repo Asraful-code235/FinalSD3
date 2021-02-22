@@ -133,5 +133,12 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void guna2GradientButton5_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Hide();
+        }
     }
 }
