@@ -83,5 +83,55 @@ namespace WindowsFormsApp1
             Ac.Show();
             this.Hide();
         }
+
+        private void guna2GradientCircleButton1_Click(object sender, EventArgs e)
+        {
+            Student std = new Student();
+            std.Show();
+            this.Hide();
+        }
+
+        private void guna2GradientButton1_Click(object sender, EventArgs e)
+        {
+            Student std = new Student();
+            std.Show();
+            this.Hide();
+        }
+
+    
+
+        private void guna2GradientButton2_Click(object sender, EventArgs e)
+        {
+            Department Dep = new Department();
+            Dep.Show();
+            this.Hide();
+        }
+
+        private void guna2GradientButton1_Click_1(object sender, EventArgs e)
+        {
+
+            Student std = new Student();
+            std.Show();
+            this.Hide();
+        }
+
+        private void guna2GradientButton4_Click(object sender, EventArgs e)
+        {
+            Account Ac = new Account();
+            Ac.Show();
+            this.Hide();
+        }
+
+        private void guna2GradientButton3_Click(object sender, EventArgs e)
+        {
+            Department Dep = new Department();
+            Dep.Show();
+            this.Hide();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

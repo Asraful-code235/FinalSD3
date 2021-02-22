@@ -40,6 +40,10 @@ namespace WindowsFormsApp1
             this.label4 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
+            this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2GradientButton3 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2GradientButton4 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -64,7 +68,7 @@ namespace WindowsFormsApp1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(45, 68);
+            this.panel1.Location = new System.Drawing.Point(584, 47);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(159, 96);
             this.panel1.TabIndex = 1;
@@ -73,6 +77,7 @@ namespace WindowsFormsApp1
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Black;
             this.label1.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(14, 34);
@@ -86,7 +91,7 @@ namespace WindowsFormsApp1
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(226, 68);
+            this.panel2.Location = new System.Drawing.Point(603, 217);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(159, 96);
             this.panel2.TabIndex = 3;
@@ -94,6 +99,7 @@ namespace WindowsFormsApp1
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Black;
             this.label2.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(14, 34);
@@ -101,6 +107,7 @@ namespace WindowsFormsApp1
             this.label2.Size = new System.Drawing.Size(108, 29);
             this.label2.TabIndex = 2;
             this.label2.Text = "Teacher";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // panel3
             // 
@@ -114,6 +121,7 @@ namespace WindowsFormsApp1
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Black;
             this.label3.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(3, 34);
@@ -127,7 +135,7 @@ namespace WindowsFormsApp1
             // 
             this.panel4.BackColor = System.Drawing.Color.Transparent;
             this.panel4.Controls.Add(this.label4);
-            this.panel4.Location = new System.Drawing.Point(42, 217);
+            this.panel4.Location = new System.Drawing.Point(363, 39);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(162, 104);
             this.panel4.TabIndex = 4;
@@ -135,6 +143,7 @@ namespace WindowsFormsApp1
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Black;
             this.label4.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(26, 33);
@@ -148,7 +157,7 @@ namespace WindowsFormsApp1
             // 
             this.panel5.BackColor = System.Drawing.Color.Transparent;
             this.panel5.Controls.Add(this.label5);
-            this.panel5.Location = new System.Drawing.Point(409, 136);
+            this.panel5.Location = new System.Drawing.Point(452, 251);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(159, 104);
             this.panel5.TabIndex = 5;
@@ -156,6 +165,7 @@ namespace WindowsFormsApp1
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Black;
             this.label5.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(8, 35);
@@ -164,13 +174,96 @@ namespace WindowsFormsApp1
             this.label5.TabIndex = 2;
             this.label5.Text = "Dashboard";
             // 
+            // guna2GradientButton1
+            // 
+            this.guna2GradientButton1.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2GradientButton1.BorderRadius = 20;
+            this.guna2GradientButton1.CheckedState.Parent = this.guna2GradientButton1;
+            this.guna2GradientButton1.CustomImages.Parent = this.guna2GradientButton1;
+            this.guna2GradientButton1.FillColor = System.Drawing.Color.Blue;
+            this.guna2GradientButton1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.guna2GradientButton1.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientButton1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.guna2GradientButton1.HoverState.Parent = this.guna2GradientButton1;
+            this.guna2GradientButton1.Location = new System.Drawing.Point(24, 24);
+            this.guna2GradientButton1.Name = "guna2GradientButton1";
+            this.guna2GradientButton1.ShadowDecoration.Parent = this.guna2GradientButton1;
+            this.guna2GradientButton1.Size = new System.Drawing.Size(180, 45);
+            this.guna2GradientButton1.TabIndex = 6;
+            this.guna2GradientButton1.Text = "Student";
+            this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click_1);
+            // 
+            // guna2GradientButton2
+            // 
+            this.guna2GradientButton2.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2GradientButton2.BorderRadius = 20;
+            this.guna2GradientButton2.CheckedState.Parent = this.guna2GradientButton2;
+            this.guna2GradientButton2.CustomImages.Parent = this.guna2GradientButton2;
+            this.guna2GradientButton2.FillColor = System.Drawing.Color.Blue;
+            this.guna2GradientButton2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.guna2GradientButton2.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GradientButton2.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientButton2.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.guna2GradientButton2.HoverState.Parent = this.guna2GradientButton2;
+            this.guna2GradientButton2.Location = new System.Drawing.Point(24, 81);
+            this.guna2GradientButton2.Name = "guna2GradientButton2";
+            this.guna2GradientButton2.ShadowDecoration.Parent = this.guna2GradientButton2;
+            this.guna2GradientButton2.Size = new System.Drawing.Size(180, 45);
+            this.guna2GradientButton2.TabIndex = 7;
+            this.guna2GradientButton2.Text = "Teacher";
+            // 
+            // guna2GradientButton3
+            // 
+            this.guna2GradientButton3.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2GradientButton3.BorderRadius = 20;
+            this.guna2GradientButton3.CheckedState.Parent = this.guna2GradientButton3;
+            this.guna2GradientButton3.CustomImages.Parent = this.guna2GradientButton3;
+            this.guna2GradientButton3.FillColor = System.Drawing.Color.Blue;
+            this.guna2GradientButton3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.guna2GradientButton3.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GradientButton3.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientButton3.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.guna2GradientButton3.HoverState.Parent = this.guna2GradientButton3;
+            this.guna2GradientButton3.Location = new System.Drawing.Point(24, 141);
+            this.guna2GradientButton3.Name = "guna2GradientButton3";
+            this.guna2GradientButton3.ShadowDecoration.Parent = this.guna2GradientButton3;
+            this.guna2GradientButton3.Size = new System.Drawing.Size(180, 45);
+            this.guna2GradientButton3.TabIndex = 8;
+            this.guna2GradientButton3.Text = "Department";
+            this.guna2GradientButton3.Click += new System.EventHandler(this.guna2GradientButton3_Click);
+            // 
+            // guna2GradientButton4
+            // 
+            this.guna2GradientButton4.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2GradientButton4.BorderRadius = 20;
+            this.guna2GradientButton4.CheckedState.Parent = this.guna2GradientButton4;
+            this.guna2GradientButton4.CustomImages.Parent = this.guna2GradientButton4;
+            this.guna2GradientButton4.FillColor = System.Drawing.Color.Blue;
+            this.guna2GradientButton4.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.guna2GradientButton4.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GradientButton4.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientButton4.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.guna2GradientButton4.HoverState.Parent = this.guna2GradientButton4;
+            this.guna2GradientButton4.Location = new System.Drawing.Point(24, 198);
+            this.guna2GradientButton4.Name = "guna2GradientButton4";
+            this.guna2GradientButton4.ShadowDecoration.Parent = this.guna2GradientButton4;
+            this.guna2GradientButton4.Size = new System.Drawing.Size(180, 45);
+            this.guna2GradientButton4.TabIndex = 9;
+            this.guna2GradientButton4.Text = "Payment";
+            this.guna2GradientButton4.Click += new System.EventHandler(this.guna2GradientButton4_Click);
+            // 
             // Interface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.guna2GradientButton4);
+            this.Controls.Add(this.guna2GradientButton3);
+            this.Controls.Add(this.guna2GradientButton2);
+            this.Controls.Add(this.guna2GradientButton1);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
@@ -206,5 +299,9 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label5;
+        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
+        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton2;
+        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton3;
+        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton4;
     }
 }
