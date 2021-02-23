@@ -118,7 +118,7 @@ namespace WindowsFormsApp1
             this.textBox3.Location = new System.Drawing.Point(183, 164);
             this.textBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox3.Name = "textBox3";
-            this.textBox3.PasswordChar = '\0';
+            this.textBox3.PasswordChar = '*';
             this.textBox3.PlaceholderText = "Enter password";
             this.textBox3.SelectedText = "";
             this.textBox3.ShadowDecoration.Parent = this.textBox3;
@@ -226,9 +226,9 @@ namespace WindowsFormsApp1
             this.htmllabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.htmllabel1.Location = new System.Drawing.Point(52, 12);
             this.htmllabel1.Name = "htmllabel1";
-            this.htmllabel1.Size = new System.Drawing.Size(345, 30);
+            this.htmllabel1.Size = new System.Drawing.Size(363, 30);
             this.htmllabel1.TabIndex = 14;
-            this.htmllabel1.Text = "IN SEARCH OF EXCILENCE";
+            this.htmllabel1.Text = "IN SEARCH OF EXCELLENCE";
             // 
             // timer2
             // 

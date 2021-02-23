@@ -47,10 +47,17 @@ namespace WindowsFormsApp1
         {
 
         }
+        int counter = 0;
+        int len = 0;
+        string txt;
 
         private void Account_Load(object sender, EventArgs e)
         {
             populate();
+            txt = label6.Text;
+            len = txt.Length;
+            label6.Text = "";
+            timer1.Start();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -61,6 +68,27 @@ namespace WindowsFormsApp1
         private void button2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            counter++;
+            if (counter > len)
+            {
+                timer1.Stop();
+
+            }
+            else
+            {
+                label6.Text = txt.Substring(0, counter);
+            }
+        }
+
+        private void guna2GradientButton3_Click(object sender, EventArgs e)
+        {
+            Interface interfa = new Interface();
+            interfa.Show();
+            this.Hide();
         }
     }
 }
