@@ -71,6 +71,7 @@ namespace WindowsFormsApp1
             len = txt.Length;
             htmllabel1.Text = "";
             timer2.Start();
+            guna2Panel1.Visible = false;
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -105,9 +106,13 @@ namespace WindowsFormsApp1
 
         private void guna2GradientButton2_Click(object sender, EventArgs e)
         {
-            User users = new User();
-            users.Show();
-            this.Hide();
+            // User users = new User();
+            //users.Show();
+            //this.Hide();
+            guna2Panel1.Visible = true;
+            guna2Panel1.BringToFront();
+            guna2Panel2.Visible = false;
+
         }
 
         private void guna2GradientButton3_Click(object sender, EventArgs e)
@@ -167,6 +172,51 @@ namespace WindowsFormsApp1
             }
            
 
+        }
+
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+           
+        }
+
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+           
+        }
+
+        private void guna2GradientButton8_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (UserId1.Text == "" || UserName2.Text == "" || Userpassword2.Text == "")
+                {
+                    MessageBox.Show("Missing information");
+                }
+                else
+                {
+                    con.Open();
+
+                    string query = "insert into UserTable values('" + UserId1.Text + "','" + UserName2.Text + "','" + Userpassword2.Text + "')";
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    cmd.ExecuteNonQuery();
+                    con.Close();
+                    guna2Panel1.Visible = false;
+                    guna2Panel2.Visible = true;
+                    guna2Panel2.BringToFront();
+                    
+                }
+
+            }
+            catch
+            {
+                MessageBox.Show("somethig went missing");
+            }
+        }
+
+        private void guna2ControlBox1_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

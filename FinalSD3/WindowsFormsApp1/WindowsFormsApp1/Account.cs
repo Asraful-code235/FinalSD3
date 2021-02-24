@@ -90,5 +90,10 @@ namespace WindowsFormsApp1
             interfa.Show();
             this.Hide();
         }
+
+        private void guna2GradientButton5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
