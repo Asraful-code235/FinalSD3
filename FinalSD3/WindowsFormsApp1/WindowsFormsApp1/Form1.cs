@@ -112,6 +112,10 @@ namespace WindowsFormsApp1
             guna2Panel1.Visible = true;
             guna2Panel1.BringToFront();
             guna2Panel2.Visible = false;
+            
+            guna2Panel1.Location=new Point (70,185);
+            
+
 
         }
 

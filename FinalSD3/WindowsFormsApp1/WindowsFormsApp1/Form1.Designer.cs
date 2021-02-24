@@ -113,7 +113,7 @@ namespace WindowsFormsApp1
             this.guna2Panel1.Controls.Add(this.guna2GradientButton5);
             this.guna2Panel1.Controls.Add(this.UserName2);
             this.guna2Panel1.Controls.Add(this.UserId1);
-            this.guna2Panel1.Location = new System.Drawing.Point(421, 35);
+            this.guna2Panel1.Location = new System.Drawing.Point(430, 26);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(390, 215);
@@ -324,10 +324,10 @@ namespace WindowsFormsApp1
             this.guna2Panel2.Controls.Add(this.guna2GradientButton1);
             this.guna2Panel2.Controls.Add(this.guna2GradientButton4);
             this.guna2Panel2.Controls.Add(this.textBox1);
-            this.guna2Panel2.Location = new System.Drawing.Point(12, 157);
+            this.guna2Panel2.Location = new System.Drawing.Point(21, 185);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
-            this.guna2Panel2.Size = new System.Drawing.Size(403, 423);
+            this.guna2Panel2.Size = new System.Drawing.Size(403, 349);
             this.guna2Panel2.TabIndex = 17;
             // 
             // textBox1
@@ -445,7 +445,7 @@ namespace WindowsFormsApp1
             this.guna2GradientButton1.HoverState.Parent = this.guna2GradientButton1;
             this.guna2GradientButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2GradientButton1.Image")));
             this.guna2GradientButton1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(37, 0);
+            this.guna2GradientButton1.Location = new System.Drawing.Point(37, 4);
             this.guna2GradientButton1.Name = "guna2GradientButton1";
             this.guna2GradientButton1.ShadowDecoration.Parent = this.guna2GradientButton1;
             this.guna2GradientButton1.Size = new System.Drawing.Size(111, 45);
