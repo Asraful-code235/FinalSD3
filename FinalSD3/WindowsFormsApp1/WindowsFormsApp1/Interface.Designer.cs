@@ -91,6 +91,7 @@ namespace WindowsFormsApp1
             this.guna2GradientButton2.Size = new System.Drawing.Size(180, 63);
             this.guna2GradientButton2.TabIndex = 7;
             this.guna2GradientButton2.Text = "Teacher";
+            this.guna2GradientButton2.Click += new System.EventHandler(this.guna2GradientButton2_Click_1);
             // 
             // guna2GradientButton3
             // 

@@ -147,5 +147,12 @@ namespace WindowsFormsApp1
             user.Show();
             this.Hide();
         }
+
+        private void guna2GradientButton2_Click_1(object sender, EventArgs e)
+        {
+            Teacher teach = new Teacher();
+            teach.Show();
+            this.Hide();
+        }
     }
 }
