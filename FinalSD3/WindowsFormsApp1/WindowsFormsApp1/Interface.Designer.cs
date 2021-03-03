@@ -49,12 +49,27 @@ namespace WindowsFormsApp1
             this.Feeslv = new System.Windows.Forms.Label();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
             this.Userlv = new System.Windows.Forms.Label();
+            this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.guna2Panel9 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.guna2Panel10 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label5 = new System.Windows.Forms.Label();
             this.guna2GradientPanel1.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
             this.guna2Panel4.SuspendLayout();
             this.guna2Panel5.SuspendLayout();
+            this.guna2Panel6.SuspendLayout();
+            this.guna2Panel7.SuspendLayout();
+            this.guna2Panel8.SuspendLayout();
+            this.guna2Panel9.SuspendLayout();
+            this.guna2Panel10.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2GradientButton1
@@ -232,7 +247,7 @@ namespace WindowsFormsApp1
             this.stdlv.BackColor = System.Drawing.Color.Transparent;
             this.stdlv.Font = new System.Drawing.Font("Verdana", 16F, System.Drawing.FontStyle.Bold);
             this.stdlv.ForeColor = System.Drawing.Color.Blue;
-            this.stdlv.Location = new System.Drawing.Point(49, 31);
+            this.stdlv.Location = new System.Drawing.Point(49, 6);
             this.stdlv.Name = "stdlv";
             this.stdlv.Size = new System.Drawing.Size(34, 32);
             this.stdlv.TabIndex = 0;
@@ -240,8 +255,12 @@ namespace WindowsFormsApp1
             // 
             // guna2Panel1
             // 
+            this.guna2Panel1.BorderColor = System.Drawing.Color.Lime;
+            this.guna2Panel1.BorderRadius = 10;
+            this.guna2Panel1.BorderThickness = 2;
+            this.guna2Panel1.Controls.Add(this.guna2Panel6);
             this.guna2Panel1.Controls.Add(this.stdlv);
-            this.guna2Panel1.Location = new System.Drawing.Point(25, 3);
+            this.guna2Panel1.Location = new System.Drawing.Point(42, 65);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(134, 99);
@@ -249,8 +268,13 @@ namespace WindowsFormsApp1
             // 
             // guna2Panel2
             // 
+            this.guna2Panel2.BackColor = System.Drawing.Color.DodgerBlue;
+            this.guna2Panel2.BorderColor = System.Drawing.Color.Lime;
+            this.guna2Panel2.BorderRadius = 10;
+            this.guna2Panel2.BorderThickness = 2;
+            this.guna2Panel2.Controls.Add(this.guna2Panel7);
             this.guna2Panel2.Controls.Add(this.Teacherlv);
-            this.guna2Panel2.Location = new System.Drawing.Point(235, 3);
+            this.guna2Panel2.Location = new System.Drawing.Point(238, 65);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
             this.guna2Panel2.Size = new System.Drawing.Size(134, 99);
@@ -262,7 +286,7 @@ namespace WindowsFormsApp1
             this.Teacherlv.BackColor = System.Drawing.Color.Transparent;
             this.Teacherlv.Font = new System.Drawing.Font("Verdana", 16F, System.Drawing.FontStyle.Bold);
             this.Teacherlv.ForeColor = System.Drawing.Color.Blue;
-            this.Teacherlv.Location = new System.Drawing.Point(49, 31);
+            this.Teacherlv.Location = new System.Drawing.Point(51, 6);
             this.Teacherlv.Name = "Teacherlv";
             this.Teacherlv.Size = new System.Drawing.Size(34, 32);
             this.Teacherlv.TabIndex = 0;
@@ -270,8 +294,12 @@ namespace WindowsFormsApp1
             // 
             // guna2Panel3
             // 
+            this.guna2Panel3.BorderColor = System.Drawing.Color.Lime;
+            this.guna2Panel3.BorderRadius = 10;
+            this.guna2Panel3.BorderThickness = 2;
+            this.guna2Panel3.Controls.Add(this.guna2Panel8);
             this.guna2Panel3.Controls.Add(this.Departmentlv);
-            this.guna2Panel3.Location = new System.Drawing.Point(25, 138);
+            this.guna2Panel3.Location = new System.Drawing.Point(42, 200);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
             this.guna2Panel3.Size = new System.Drawing.Size(134, 99);
@@ -283,7 +311,7 @@ namespace WindowsFormsApp1
             this.Departmentlv.BackColor = System.Drawing.Color.Transparent;
             this.Departmentlv.Font = new System.Drawing.Font("Verdana", 16F, System.Drawing.FontStyle.Bold);
             this.Departmentlv.ForeColor = System.Drawing.Color.Blue;
-            this.Departmentlv.Location = new System.Drawing.Point(49, 31);
+            this.Departmentlv.Location = new System.Drawing.Point(49, 5);
             this.Departmentlv.Name = "Departmentlv";
             this.Departmentlv.Size = new System.Drawing.Size(34, 32);
             this.Departmentlv.TabIndex = 0;
@@ -291,8 +319,12 @@ namespace WindowsFormsApp1
             // 
             // guna2Panel4
             // 
+            this.guna2Panel4.BorderColor = System.Drawing.Color.Lime;
+            this.guna2Panel4.BorderRadius = 10;
+            this.guna2Panel4.BorderThickness = 2;
+            this.guna2Panel4.Controls.Add(this.guna2Panel9);
             this.guna2Panel4.Controls.Add(this.Feeslv);
-            this.guna2Panel4.Location = new System.Drawing.Point(235, 138);
+            this.guna2Panel4.Location = new System.Drawing.Point(238, 200);
             this.guna2Panel4.Name = "guna2Panel4";
             this.guna2Panel4.ShadowDecoration.Parent = this.guna2Panel4;
             this.guna2Panel4.Size = new System.Drawing.Size(134, 99);
@@ -304,7 +336,7 @@ namespace WindowsFormsApp1
             this.Feeslv.BackColor = System.Drawing.Color.Transparent;
             this.Feeslv.Font = new System.Drawing.Font("Verdana", 16F, System.Drawing.FontStyle.Bold);
             this.Feeslv.ForeColor = System.Drawing.Color.Blue;
-            this.Feeslv.Location = new System.Drawing.Point(49, 31);
+            this.Feeslv.Location = new System.Drawing.Point(49, 5);
             this.Feeslv.Name = "Feeslv";
             this.Feeslv.Size = new System.Drawing.Size(34, 32);
             this.Feeslv.TabIndex = 0;
@@ -312,8 +344,12 @@ namespace WindowsFormsApp1
             // 
             // guna2Panel5
             // 
+            this.guna2Panel5.BorderColor = System.Drawing.Color.Lime;
+            this.guna2Panel5.BorderRadius = 10;
+            this.guna2Panel5.BorderThickness = 2;
+            this.guna2Panel5.Controls.Add(this.guna2Panel10);
             this.guna2Panel5.Controls.Add(this.Userlv);
-            this.guna2Panel5.Location = new System.Drawing.Point(399, 79);
+            this.guna2Panel5.Location = new System.Drawing.Point(406, 138);
             this.guna2Panel5.Name = "guna2Panel5";
             this.guna2Panel5.ShadowDecoration.Parent = this.guna2Panel5;
             this.guna2Panel5.Size = new System.Drawing.Size(134, 99);
@@ -325,11 +361,122 @@ namespace WindowsFormsApp1
             this.Userlv.BackColor = System.Drawing.Color.Transparent;
             this.Userlv.Font = new System.Drawing.Font("Verdana", 16F, System.Drawing.FontStyle.Bold);
             this.Userlv.ForeColor = System.Drawing.Color.Blue;
-            this.Userlv.Location = new System.Drawing.Point(49, 31);
+            this.Userlv.Location = new System.Drawing.Point(49, 5);
             this.Userlv.Name = "Userlv";
             this.Userlv.Size = new System.Drawing.Size(34, 32);
             this.Userlv.TabIndex = 0;
             this.Userlv.Text = "0";
+            // 
+            // guna2Panel6
+            // 
+            this.guna2Panel6.BorderColor = System.Drawing.Color.Lime;
+            this.guna2Panel6.BorderRadius = 10;
+            this.guna2Panel6.BorderThickness = 2;
+            this.guna2Panel6.Controls.Add(this.label1);
+            this.guna2Panel6.Location = new System.Drawing.Point(15, 47);
+            this.guna2Panel6.Name = "guna2Panel6";
+            this.guna2Panel6.ShadowDecoration.Parent = this.guna2Panel6;
+            this.guna2Panel6.Size = new System.Drawing.Size(98, 38);
+            this.guna2Panel6.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.Gray;
+            this.label1.Location = new System.Drawing.Point(18, 11);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(64, 17);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Students";
+            // 
+            // guna2Panel7
+            // 
+            this.guna2Panel7.BackColor = System.Drawing.Color.AliceBlue;
+            this.guna2Panel7.BorderColor = System.Drawing.Color.Lime;
+            this.guna2Panel7.BorderRadius = 10;
+            this.guna2Panel7.BorderThickness = 2;
+            this.guna2Panel7.Controls.Add(this.label2);
+            this.guna2Panel7.Location = new System.Drawing.Point(21, 48);
+            this.guna2Panel7.Name = "guna2Panel7";
+            this.guna2Panel7.ShadowDecoration.Parent = this.guna2Panel7;
+            this.guna2Panel7.Size = new System.Drawing.Size(98, 38);
+            this.guna2Panel7.TabIndex = 4;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.Gray;
+            this.label2.Location = new System.Drawing.Point(18, 11);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(64, 17);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Students";
+            // 
+            // guna2Panel8
+            // 
+            this.guna2Panel8.BorderColor = System.Drawing.Color.Lime;
+            this.guna2Panel8.BorderRadius = 10;
+            this.guna2Panel8.BorderThickness = 2;
+            this.guna2Panel8.Controls.Add(this.label3);
+            this.guna2Panel8.Location = new System.Drawing.Point(15, 47);
+            this.guna2Panel8.Name = "guna2Panel8";
+            this.guna2Panel8.ShadowDecoration.Parent = this.guna2Panel8;
+            this.guna2Panel8.Size = new System.Drawing.Size(98, 38);
+            this.guna2Panel8.TabIndex = 4;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.Gray;
+            this.label3.Location = new System.Drawing.Point(18, 11);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(64, 17);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Students";
+            // 
+            // guna2Panel9
+            // 
+            this.guna2Panel9.BorderColor = System.Drawing.Color.Lime;
+            this.guna2Panel9.BorderRadius = 10;
+            this.guna2Panel9.BorderThickness = 2;
+            this.guna2Panel9.Controls.Add(this.label4);
+            this.guna2Panel9.Location = new System.Drawing.Point(21, 43);
+            this.guna2Panel9.Name = "guna2Panel9";
+            this.guna2Panel9.ShadowDecoration.Parent = this.guna2Panel9;
+            this.guna2Panel9.Size = new System.Drawing.Size(98, 38);
+            this.guna2Panel9.TabIndex = 4;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.Gray;
+            this.label4.Location = new System.Drawing.Point(18, 11);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(64, 17);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Students";
+            // 
+            // guna2Panel10
+            // 
+            this.guna2Panel10.BorderColor = System.Drawing.Color.Lime;
+            this.guna2Panel10.BorderRadius = 10;
+            this.guna2Panel10.BorderThickness = 2;
+            this.guna2Panel10.Controls.Add(this.label5);
+            this.guna2Panel10.Location = new System.Drawing.Point(19, 49);
+            this.guna2Panel10.Name = "guna2Panel10";
+            this.guna2Panel10.ShadowDecoration.Parent = this.guna2Panel10;
+            this.guna2Panel10.Size = new System.Drawing.Size(98, 38);
+            this.guna2Panel10.TabIndex = 4;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.Color.Gray;
+            this.label5.Location = new System.Drawing.Point(18, 11);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(64, 17);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "Students";
             // 
             // Interface
             // 
@@ -360,6 +507,16 @@ namespace WindowsFormsApp1
             this.guna2Panel4.PerformLayout();
             this.guna2Panel5.ResumeLayout(false);
             this.guna2Panel5.PerformLayout();
+            this.guna2Panel6.ResumeLayout(false);
+            this.guna2Panel6.PerformLayout();
+            this.guna2Panel7.ResumeLayout(false);
+            this.guna2Panel7.PerformLayout();
+            this.guna2Panel8.ResumeLayout(false);
+            this.guna2Panel8.PerformLayout();
+            this.guna2Panel9.ResumeLayout(false);
+            this.guna2Panel9.PerformLayout();
+            this.guna2Panel10.ResumeLayout(false);
+            this.guna2Panel10.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -383,5 +540,15 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Label Departmentlv;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private System.Windows.Forms.Label Teacherlv;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel10;
+        private System.Windows.Forms.Label label5;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel9;
+        private System.Windows.Forms.Label label4;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel8;
+        private System.Windows.Forms.Label label3;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel7;
+        private System.Windows.Forms.Label label2;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel6;
+        private System.Windows.Forms.Label label1;
     }
 }
