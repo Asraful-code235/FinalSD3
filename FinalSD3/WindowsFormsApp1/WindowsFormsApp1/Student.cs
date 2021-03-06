@@ -62,18 +62,18 @@ namespace WindowsFormsApp1
         }
      
       
-       // private void nodueavailable()
-        //{
-         //   con.Open();
-          //  string query = "select * from  StudentTb1 where StdFees >" + 0 + "";
-          //  SqlDataAdapter sda = new SqlDataAdapter(query, con);
-           // SqlCommandBuilder builder = new SqlCommandBuilder(sda);
-           // var ds = new DataSet();
-           // sda.Fill(ds);
-          // StdDataGV.DataSource = ds.Tables[0];
-          //  con.Close();
+        private void nodueavailable()
+        {
+            con.Open();
+            string query = "select * from  StudentTb1 where StdFees >" + 0 + "";
+            SqlDataAdapter sda = new SqlDataAdapter(query, con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+           StdDataGV.DataSource = ds.Tables[0];
+            con.Close();
 
-       // }
+        }
         private void button4_Click(object sender, EventArgs e)
         {
             Interface interfac = new Interface();
@@ -269,6 +269,16 @@ namespace WindowsFormsApp1
             {
                 guna2HtmlLabel1.Text = txt.Substring(0, counter);
             }
+        }
+
+        private void guna2GradientButton13_Click(object sender, EventArgs e)
+        {
+            nodueavailable();
+        }
+
+        private void guna2GradientButton12_Click(object sender, EventArgs e)
+        {
+            populate();
         }
     }
 }
