@@ -70,9 +70,20 @@ namespace WindowsFormsApp1
             SqlCommandBuilder builder = new SqlCommandBuilder(sda);
             var ds = new DataSet();
             sda.Fill(ds);
-           StdDataGV.DataSource = ds.Tables[0];
+           stdcv.DataSource = ds.Tables[0];
             con.Close();
 
+        }
+        private void duelist()
+        {
+            con.Open();
+            string query = "select * from  StudentTb1 where StdFees  =" + 0 + "";
+            SqlDataAdapter sda = new SqlDataAdapter(query, con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            stdcv.DataSource = ds.Tables[0];
+            con.Close();
         }
         private void button4_Click(object sender, EventArgs e)
         {
@@ -108,17 +119,7 @@ namespace WindowsFormsApp1
            // }
        // }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
     
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void guna2GradientButton3_Click(object sender, EventArgs e)
         {
@@ -127,32 +128,9 @@ namespace WindowsFormsApp1
             this.Hide();
         }
 
-        private void guna2GradientButton2_Click(object sender, EventArgs e)
-        {
+ 
 
-        }
-
-
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-         
-        }
-
-        private void guna2GradientButton4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2GradientButton8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2GradientButton9_Click(object sender, EventArgs e)
-        {
-
-        }
+      
 
         private void guna2GradientButton5_Click(object sender, EventArgs e)
         {
@@ -164,9 +142,10 @@ namespace WindowsFormsApp1
                }
               else
               {
-                con.Open();
+                    string date = stdDate.Value.Year.ToString();
+                    con.Open();
 
-               string query = "insert into StudentTb1 values('" + stdid1.Text + "','" + stdName1.Text + "','" + GenderCv.SelectedItem.ToString() + "','" + stdDate.Text + "','" + stdphone1.Text + "','" + DepCv.SelectedValue.ToString() + "','" + stdFees1.Text + "')";
+               string query = "insert into StudentTb1 values('" + stdid1.Text + "','" + stdName1.Text + "','" + GenderCv.SelectedItem.ToString() + "','" + date + "','" + stdphone1.Text + "','" + DepCv.SelectedValue.ToString() + "','" + stdFees1.Text + "')";
                SqlCommand cmd = new SqlCommand(query, con);
                cmd.ExecuteNonQuery();
                  MessageBox.Show("Added");
@@ -193,8 +172,9 @@ namespace WindowsFormsApp1
               }
               else
              {
-                con.Open();
-                string query = "update StudentTb1 set StdName ='" + stdName1.Text + "',StdGender ='" + GenderCv.SelectedItem.ToString() + "',StdDOB ='" + stdDate.Text + "',StdPhone ='" + stdphone1.Text + "', StdDep='"+DepCv.SelectedValue.ToString()+"',StdFees ='" +stdFees1.Text + "' where Stdid='" + stdid1.Text + "';";
+                    string date = stdDate.Value.Year.ToString();
+                    con.Open();
+                string query = "update StudentTb1 set StdName ='" + stdName1.Text + "',StdGender ='" + GenderCv.SelectedItem.ToString() + "',StdDOB ='" + date + "',StdPhone ='" + stdphone1.Text + "', StdDep='"+DepCv.SelectedValue.ToString()+"',StdFees ='" +stdFees1.Text + "' where Stdid='" + stdid1.Text + "';";
                 SqlCommand cmd = new SqlCommand(query, con);
                 cmd.ExecuteNonQuery();
                MessageBox.Show("student updated successfully");
@@ -279,6 +259,11 @@ namespace WindowsFormsApp1
         private void guna2GradientButton12_Click(object sender, EventArgs e)
         {
             populate();
+        }
+
+        private void guna2GradientButton14_Click(object sender, EventArgs e)
+        {
+            duelist();
         }
     }
 }
