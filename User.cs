@@ -227,8 +227,8 @@ namespace WindowsFormsApp1
 
         private void guna2GradientButton3_Click(object sender, EventArgs e)
         {
-            Login Form = new Login();
-            Form.Show();
+            Interface intr = new Interface();
+            intr.Show();
             this.Hide();
         }
 
