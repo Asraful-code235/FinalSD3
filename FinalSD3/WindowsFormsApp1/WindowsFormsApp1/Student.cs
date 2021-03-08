@@ -144,7 +144,6 @@ namespace WindowsFormsApp1
               {
                     string date = stdDate.Value.Year.ToString();
                     con.Open();
-
                string query = "insert into StudentTb1 values('" + stdid1.Text + "','" + stdName1.Text + "','" + GenderCv.SelectedItem.ToString() + "','" + date + "','" + stdphone1.Text + "','" + DepCv.SelectedValue.ToString() + "','" + stdFees1.Text + "')";
                SqlCommand cmd = new SqlCommand(query, con);
                cmd.ExecuteNonQuery();

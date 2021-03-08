@@ -145,7 +145,7 @@ namespace WindowsFormsApp1
             this.guna2GradientButton4.Text = "Stdid";
             this.guna2GradientButton4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2GradientButton4.UseTransparentBackground = true;
-            this.guna2GradientButton4.Click += new System.EventHandler(this.guna2GradientButton4_Click);
+            //this.guna2GradientButton4.Click += new System.EventHandler(this.guna2GradientButton4_Click);
             // 
             // stdName1
             // 
@@ -472,7 +472,7 @@ namespace WindowsFormsApp1
             this.guna2GradientButton8.Text = "StdDOB";
             this.guna2GradientButton8.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2GradientButton8.UseTransparentBackground = true;
-            this.guna2GradientButton8.Click += new System.EventHandler(this.guna2GradientButton8_Click);
+           // this.guna2GradientButton8.Click += new System.EventHandler(this.guna2GradientButton8_Click);
             // 
             // guna2GradientButton9
             // 
@@ -501,7 +501,7 @@ namespace WindowsFormsApp1
             this.guna2GradientButton9.Text = "StdPhone";
             this.guna2GradientButton9.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2GradientButton9.UseTransparentBackground = true;
-            this.guna2GradientButton9.Click += new System.EventHandler(this.guna2GradientButton9_Click);
+            //this.guna2GradientButton9.Click += new System.EventHandler(this.guna2GradientButton9_Click);
             // 
             // guna2GradientButton10
             // 
