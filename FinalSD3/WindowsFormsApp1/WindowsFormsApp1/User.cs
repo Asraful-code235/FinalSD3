@@ -65,6 +65,7 @@ namespace WindowsFormsApp1
 
         private void User_Load(object sender, EventArgs e)
         {
+            searchbox1.Visible = false;
             populate();
             txt = label4.Text;
             len = txt.Length;
@@ -249,6 +250,34 @@ namespace WindowsFormsApp1
             {
                 label4.Text = txt.Substring(0, counter);
             }
+        }
+
+        private void guna2GradientButton15_Click(object sender, EventArgs e)
+        {
+            searchbox1.Visible = true;
+            searchbox1.BringToFront();
+        }
+
+        private void searchbox1_TextChanged(object sender, EventArgs e)
+        {
+            con.Open();
+            string query = "select * from  UserTable where UserId = '" + searchbox1.Text + "'";
+            SqlDataAdapter sda4 = new SqlDataAdapter(query, con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda4);
+            var ds3 = new DataSet();
+            sda4.Fill(ds3);
+            UserDataGV.DataSource = ds3.Tables[0];
+            con.Close();
+        }
+
+        private void guna2GradientButton8_Click(object sender, EventArgs e)
+        {
+            populate();
+        }
+
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
     }

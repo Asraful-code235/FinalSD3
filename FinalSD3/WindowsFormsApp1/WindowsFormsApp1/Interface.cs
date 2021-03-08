@@ -183,5 +183,10 @@ namespace WindowsFormsApp1
             Userlv.Text = dt5.Rows[0][0].ToString();
             con.Close();
         }
+
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

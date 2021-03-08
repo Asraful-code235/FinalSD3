@@ -59,6 +59,9 @@ namespace WindowsFormsApp1
             this.guna2GradientButton12 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton13 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton14 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.searchbox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2GradientButton15 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             ((System.ComponentModel.ISupportInitialize)(this.stdcv)).BeginInit();
             this.SuspendLayout();
             // 
@@ -81,7 +84,7 @@ namespace WindowsFormsApp1
             this.guna2GradientButton7.HoverState.Parent = this.guna2GradientButton7;
             this.guna2GradientButton7.Image = ((System.Drawing.Image)(resources.GetObject("guna2GradientButton7.Image")));
             this.guna2GradientButton7.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2GradientButton7.Location = new System.Drawing.Point(10, 116);
+            this.guna2GradientButton7.Location = new System.Drawing.Point(23, 219);
             this.guna2GradientButton7.Name = "guna2GradientButton7";
             this.guna2GradientButton7.ShadowDecoration.Parent = this.guna2GradientButton7;
             this.guna2GradientButton7.Size = new System.Drawing.Size(142, 45);
@@ -109,7 +112,7 @@ namespace WindowsFormsApp1
             this.guna2GradientButton6.HoverState.Parent = this.guna2GradientButton6;
             this.guna2GradientButton6.Image = ((System.Drawing.Image)(resources.GetObject("guna2GradientButton6.Image")));
             this.guna2GradientButton6.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2GradientButton6.Location = new System.Drawing.Point(12, 65);
+            this.guna2GradientButton6.Location = new System.Drawing.Point(25, 168);
             this.guna2GradientButton6.Name = "guna2GradientButton6";
             this.guna2GradientButton6.ShadowDecoration.Parent = this.guna2GradientButton6;
             this.guna2GradientButton6.Size = new System.Drawing.Size(142, 45);
@@ -137,7 +140,7 @@ namespace WindowsFormsApp1
             this.guna2GradientButton4.HoverState.Parent = this.guna2GradientButton4;
             this.guna2GradientButton4.Image = ((System.Drawing.Image)(resources.GetObject("guna2GradientButton4.Image")));
             this.guna2GradientButton4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2GradientButton4.Location = new System.Drawing.Point(12, 12);
+            this.guna2GradientButton4.Location = new System.Drawing.Point(25, 115);
             this.guna2GradientButton4.Name = "guna2GradientButton4";
             this.guna2GradientButton4.ShadowDecoration.Parent = this.guna2GradientButton4;
             this.guna2GradientButton4.Size = new System.Drawing.Size(111, 45);
@@ -145,7 +148,6 @@ namespace WindowsFormsApp1
             this.guna2GradientButton4.Text = "Stdid";
             this.guna2GradientButton4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2GradientButton4.UseTransparentBackground = true;
-            //this.guna2GradientButton4.Click += new System.EventHandler(this.guna2GradientButton4_Click);
             // 
             // stdName1
             // 
@@ -165,7 +167,7 @@ namespace WindowsFormsApp1
             this.stdName1.ForeColor = System.Drawing.Color.Blue;
             this.stdName1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.stdName1.HoverState.Parent = this.stdName1;
-            this.stdName1.Location = new System.Drawing.Point(175, 65);
+            this.stdName1.Location = new System.Drawing.Point(188, 168);
             this.stdName1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.stdName1.Name = "stdName1";
             this.stdName1.PasswordChar = '\0';
@@ -193,7 +195,7 @@ namespace WindowsFormsApp1
             this.stdid1.ForeColor = System.Drawing.Color.Blue;
             this.stdid1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.stdid1.HoverState.Parent = this.stdid1;
-            this.stdid1.Location = new System.Drawing.Point(175, 13);
+            this.stdid1.Location = new System.Drawing.Point(188, 116);
             this.stdid1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.stdid1.Name = "stdid1";
             this.stdid1.PasswordChar = '\0';
@@ -219,7 +221,7 @@ namespace WindowsFormsApp1
             this.guna2GradientButton2.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.guna2GradientButton2.HoverState.ForeColor = System.Drawing.Color.White;
             this.guna2GradientButton2.HoverState.Parent = this.guna2GradientButton2;
-            this.guna2GradientButton2.Location = new System.Drawing.Point(269, 442);
+            this.guna2GradientButton2.Location = new System.Drawing.Point(297, 521);
             this.guna2GradientButton2.Name = "guna2GradientButton2";
             this.guna2GradientButton2.ShadowDecoration.Parent = this.guna2GradientButton2;
             this.guna2GradientButton2.Size = new System.Drawing.Size(102, 40);
@@ -244,7 +246,7 @@ namespace WindowsFormsApp1
             this.guna2GradientButton1.HoverState.ForeColor = System.Drawing.Color.Gray;
             this.guna2GradientButton1.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2GradientButton1.HoverState.Image")));
             this.guna2GradientButton1.HoverState.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(143, 442);
+            this.guna2GradientButton1.Location = new System.Drawing.Point(171, 521);
             this.guna2GradientButton1.Name = "guna2GradientButton1";
             this.guna2GradientButton1.ShadowDecoration.Parent = this.guna2GradientButton1;
             this.guna2GradientButton1.Size = new System.Drawing.Size(102, 40);
@@ -269,7 +271,7 @@ namespace WindowsFormsApp1
             this.guna2GradientButton5.HoverState.ForeColor = System.Drawing.Color.Gray;
             this.guna2GradientButton5.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2GradientButton5.HoverState.Image")));
             this.guna2GradientButton5.HoverState.Parent = this.guna2GradientButton5;
-            this.guna2GradientButton5.Location = new System.Drawing.Point(15, 442);
+            this.guna2GradientButton5.Location = new System.Drawing.Point(43, 521);
             this.guna2GradientButton5.Name = "guna2GradientButton5";
             this.guna2GradientButton5.ShadowDecoration.Parent = this.guna2GradientButton5;
             this.guna2GradientButton5.Size = new System.Drawing.Size(102, 40);
@@ -307,7 +309,7 @@ namespace WindowsFormsApp1
             this.stdcv.DefaultCellStyle = dataGridViewCellStyle3;
             this.stdcv.EnableHeadersVisualStyles = false;
             this.stdcv.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.stdcv.Location = new System.Drawing.Point(449, 73);
+            this.stdcv.Location = new System.Drawing.Point(435, 191);
             this.stdcv.Name = "stdcv";
             this.stdcv.RowHeadersVisible = false;
             this.stdcv.RowHeadersWidth = 51;
@@ -356,7 +358,7 @@ namespace WindowsFormsApp1
             this.guna2GradientButton3.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2GradientButton3.HoverState.Image")));
             this.guna2GradientButton3.HoverState.Parent = this.guna2GradientButton3;
             this.guna2GradientButton3.Image = ((System.Drawing.Image)(resources.GetObject("guna2GradientButton3.Image")));
-            this.guna2GradientButton3.Location = new System.Drawing.Point(854, 466);
+            this.guna2GradientButton3.Location = new System.Drawing.Point(851, 592);
             this.guna2GradientButton3.Name = "guna2GradientButton3";
             this.guna2GradientButton3.ShadowDecoration.Parent = this.guna2GradientButton3;
             this.guna2GradientButton3.Size = new System.Drawing.Size(102, 40);
@@ -383,7 +385,7 @@ namespace WindowsFormsApp1
             "Male",
             "Female"});
             this.DepCv.ItemsAppearance.Parent = this.DepCv;
-            this.DepCv.Location = new System.Drawing.Point(175, 285);
+            this.DepCv.Location = new System.Drawing.Point(188, 388);
             this.DepCv.Name = "DepCv";
             this.DepCv.ShadowDecoration.Parent = this.DepCv;
             this.DepCv.Size = new System.Drawing.Size(214, 36);
@@ -407,7 +409,7 @@ namespace WindowsFormsApp1
             this.stdFees1.ForeColor = System.Drawing.Color.Blue;
             this.stdFees1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.stdFees1.HoverState.Parent = this.stdFees1;
-            this.stdFees1.Location = new System.Drawing.Point(175, 339);
+            this.stdFees1.Location = new System.Drawing.Point(188, 442);
             this.stdFees1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.stdFees1.Name = "stdFees1";
             this.stdFees1.PasswordChar = '\0';
@@ -435,7 +437,7 @@ namespace WindowsFormsApp1
             this.stdphone1.ForeColor = System.Drawing.Color.Blue;
             this.stdphone1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.stdphone1.HoverState.Parent = this.stdphone1;
-            this.stdphone1.Location = new System.Drawing.Point(175, 234);
+            this.stdphone1.Location = new System.Drawing.Point(188, 337);
             this.stdphone1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.stdphone1.Name = "stdphone1";
             this.stdphone1.PasswordChar = '\0';
@@ -464,7 +466,7 @@ namespace WindowsFormsApp1
             this.guna2GradientButton8.HoverState.Parent = this.guna2GradientButton8;
             this.guna2GradientButton8.Image = ((System.Drawing.Image)(resources.GetObject("guna2GradientButton8.Image")));
             this.guna2GradientButton8.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2GradientButton8.Location = new System.Drawing.Point(15, 167);
+            this.guna2GradientButton8.Location = new System.Drawing.Point(28, 270);
             this.guna2GradientButton8.Name = "guna2GradientButton8";
             this.guna2GradientButton8.ShadowDecoration.Parent = this.guna2GradientButton8;
             this.guna2GradientButton8.Size = new System.Drawing.Size(111, 45);
@@ -472,7 +474,6 @@ namespace WindowsFormsApp1
             this.guna2GradientButton8.Text = "StdDOB";
             this.guna2GradientButton8.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2GradientButton8.UseTransparentBackground = true;
-           // this.guna2GradientButton8.Click += new System.EventHandler(this.guna2GradientButton8_Click);
             // 
             // guna2GradientButton9
             // 
@@ -493,7 +494,7 @@ namespace WindowsFormsApp1
             this.guna2GradientButton9.HoverState.Parent = this.guna2GradientButton9;
             this.guna2GradientButton9.Image = ((System.Drawing.Image)(resources.GetObject("guna2GradientButton9.Image")));
             this.guna2GradientButton9.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2GradientButton9.Location = new System.Drawing.Point(15, 234);
+            this.guna2GradientButton9.Location = new System.Drawing.Point(28, 337);
             this.guna2GradientButton9.Name = "guna2GradientButton9";
             this.guna2GradientButton9.ShadowDecoration.Parent = this.guna2GradientButton9;
             this.guna2GradientButton9.Size = new System.Drawing.Size(137, 45);
@@ -501,7 +502,6 @@ namespace WindowsFormsApp1
             this.guna2GradientButton9.Text = "StdPhone";
             this.guna2GradientButton9.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2GradientButton9.UseTransparentBackground = true;
-            //this.guna2GradientButton9.Click += new System.EventHandler(this.guna2GradientButton9_Click);
             // 
             // guna2GradientButton10
             // 
@@ -522,7 +522,7 @@ namespace WindowsFormsApp1
             this.guna2GradientButton10.HoverState.Parent = this.guna2GradientButton10;
             this.guna2GradientButton10.Image = ((System.Drawing.Image)(resources.GetObject("guna2GradientButton10.Image")));
             this.guna2GradientButton10.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2GradientButton10.Location = new System.Drawing.Point(12, 285);
+            this.guna2GradientButton10.Location = new System.Drawing.Point(25, 388);
             this.guna2GradientButton10.Name = "guna2GradientButton10";
             this.guna2GradientButton10.ShadowDecoration.Parent = this.guna2GradientButton10;
             this.guna2GradientButton10.Size = new System.Drawing.Size(111, 45);
@@ -550,7 +550,7 @@ namespace WindowsFormsApp1
             this.guna2GradientButton11.HoverState.Parent = this.guna2GradientButton11;
             this.guna2GradientButton11.Image = ((System.Drawing.Image)(resources.GetObject("guna2GradientButton11.Image")));
             this.guna2GradientButton11.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2GradientButton11.Location = new System.Drawing.Point(15, 339);
+            this.guna2GradientButton11.Location = new System.Drawing.Point(28, 442);
             this.guna2GradientButton11.Name = "guna2GradientButton11";
             this.guna2GradientButton11.ShadowDecoration.Parent = this.guna2GradientButton11;
             this.guna2GradientButton11.Size = new System.Drawing.Size(111, 45);
@@ -578,7 +578,7 @@ namespace WindowsFormsApp1
             "Male",
             "Female"});
             this.GenderCv.ItemsAppearance.Parent = this.GenderCv;
-            this.GenderCv.Location = new System.Drawing.Point(175, 125);
+            this.GenderCv.Location = new System.Drawing.Point(188, 228);
             this.GenderCv.Name = "GenderCv";
             this.GenderCv.ShadowDecoration.Parent = this.GenderCv;
             this.GenderCv.Size = new System.Drawing.Size(214, 36);
@@ -587,7 +587,7 @@ namespace WindowsFormsApp1
             // stdDate
             // 
             this.stdDate.CalendarTitleBackColor = System.Drawing.Color.Lime;
-            this.stdDate.Location = new System.Drawing.Point(175, 181);
+            this.stdDate.Location = new System.Drawing.Point(188, 284);
             this.stdDate.Name = "stdDate";
             this.stdDate.Size = new System.Drawing.Size(214, 22);
             this.stdDate.TabIndex = 88;
@@ -597,7 +597,7 @@ namespace WindowsFormsApp1
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.Blue;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(634, 40);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(340, 31);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(116, 27);
             this.guna2HtmlLabel1.TabIndex = 90;
@@ -629,10 +629,10 @@ namespace WindowsFormsApp1
             this.guna2GradientButton12.HoverState.ForeColor = System.Drawing.Color.Gray;
             this.guna2GradientButton12.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2GradientButton12.HoverState.Image")));
             this.guna2GradientButton12.HoverState.Parent = this.guna2GradientButton12;
-            this.guna2GradientButton12.Location = new System.Drawing.Point(618, 443);
+            this.guna2GradientButton12.Location = new System.Drawing.Point(775, 123);
             this.guna2GradientButton12.Name = "guna2GradientButton12";
             this.guna2GradientButton12.ShadowDecoration.Parent = this.guna2GradientButton12;
-            this.guna2GradientButton12.Size = new System.Drawing.Size(164, 40);
+            this.guna2GradientButton12.Size = new System.Drawing.Size(143, 36);
             this.guna2GradientButton12.TabIndex = 92;
             this.guna2GradientButton12.Text = "Refresh";
             this.guna2GradientButton12.Click += new System.EventHandler(this.guna2GradientButton12_Click);
@@ -654,10 +654,10 @@ namespace WindowsFormsApp1
             this.guna2GradientButton13.HoverState.ForeColor = System.Drawing.Color.Gray;
             this.guna2GradientButton13.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2GradientButton13.HoverState.Image")));
             this.guna2GradientButton13.HoverState.Parent = this.guna2GradientButton13;
-            this.guna2GradientButton13.Location = new System.Drawing.Point(461, 421);
+            this.guna2GradientButton13.Location = new System.Drawing.Point(461, 124);
             this.guna2GradientButton13.Name = "guna2GradientButton13";
             this.guna2GradientButton13.ShadowDecoration.Parent = this.guna2GradientButton13;
-            this.guna2GradientButton13.Size = new System.Drawing.Size(151, 40);
+            this.guna2GradientButton13.Size = new System.Drawing.Size(130, 36);
             this.guna2GradientButton13.TabIndex = 91;
             this.guna2GradientButton13.Text = "NoDueLists";
             this.guna2GradientButton13.Click += new System.EventHandler(this.guna2GradientButton13_Click);
@@ -679,18 +679,93 @@ namespace WindowsFormsApp1
             this.guna2GradientButton14.HoverState.ForeColor = System.Drawing.Color.Gray;
             this.guna2GradientButton14.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2GradientButton14.HoverState.Image")));
             this.guna2GradientButton14.HoverState.Parent = this.guna2GradientButton14;
-            this.guna2GradientButton14.Location = new System.Drawing.Point(461, 467);
+            this.guna2GradientButton14.Location = new System.Drawing.Point(618, 124);
             this.guna2GradientButton14.Name = "guna2GradientButton14";
             this.guna2GradientButton14.ShadowDecoration.Parent = this.guna2GradientButton14;
-            this.guna2GradientButton14.Size = new System.Drawing.Size(151, 40);
+            this.guna2GradientButton14.Size = new System.Drawing.Size(130, 36);
             this.guna2GradientButton14.TabIndex = 93;
             this.guna2GradientButton14.Text = "DueLists";
             this.guna2GradientButton14.Click += new System.EventHandler(this.guna2GradientButton14_Click);
             // 
+            // searchbox
+            // 
+            this.searchbox.Animated = true;
+            this.searchbox.BorderColor = System.Drawing.Color.Lime;
+            this.searchbox.BorderRadius = 8;
+            this.searchbox.BorderThickness = 2;
+            this.searchbox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.searchbox.DefaultText = "";
+            this.searchbox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.searchbox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.searchbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.searchbox.DisabledState.Parent = this.searchbox;
+            this.searchbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.searchbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.searchbox.FocusedState.Parent = this.searchbox;
+            this.searchbox.ForeColor = System.Drawing.Color.Blue;
+            this.searchbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.searchbox.HoverState.Parent = this.searchbox;
+            this.searchbox.Location = new System.Drawing.Point(592, 61);
+            this.searchbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.searchbox.Name = "searchbox";
+            this.searchbox.PasswordChar = '\0';
+            this.searchbox.PlaceholderText = "Enter Student ID\r\n";
+            this.searchbox.SelectedText = "";
+            this.searchbox.ShadowDecoration.Parent = this.searchbox;
+            this.searchbox.Size = new System.Drawing.Size(214, 44);
+            this.searchbox.TabIndex = 94;
+            this.searchbox.TextChanged += new System.EventHandler(this.searchbox_TextChanged);
+            // 
+            // guna2GradientButton15
+            // 
+            this.guna2GradientButton15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.guna2GradientButton15.BorderRadius = 10;
+            this.guna2GradientButton15.CheckedState.Parent = this.guna2GradientButton15;
+            this.guna2GradientButton15.CustomImages.Parent = this.guna2GradientButton15;
+            this.guna2GradientButton15.FillColor = System.Drawing.Color.Lime;
+            this.guna2GradientButton15.FillColor2 = System.Drawing.Color.Aqua;
+            this.guna2GradientButton15.Font = new System.Drawing.Font("Verdana", 10.2F);
+            this.guna2GradientButton15.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientButton15.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.guna2GradientButton15.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.guna2GradientButton15.HoverState.FillColor = System.Drawing.Color.White;
+            this.guna2GradientButton15.HoverState.FillColor2 = System.Drawing.Color.White;
+            this.guna2GradientButton15.HoverState.ForeColor = System.Drawing.Color.Gray;
+            this.guna2GradientButton15.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2GradientButton15.HoverState.Image")));
+            this.guna2GradientButton15.HoverState.Parent = this.guna2GradientButton15;
+            this.guna2GradientButton15.Location = new System.Drawing.Point(830, 65);
+            this.guna2GradientButton15.Name = "guna2GradientButton15";
+            this.guna2GradientButton15.ShadowDecoration.Parent = this.guna2GradientButton15;
+            this.guna2GradientButton15.Size = new System.Drawing.Size(101, 40);
+            this.guna2GradientButton15.TabIndex = 95;
+            this.guna2GradientButton15.Text = "Search";
+            this.guna2GradientButton15.Click += new System.EventHandler(this.guna2GradientButton15_Click);
+            // 
+            // guna2ControlBox1
+            // 
+            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox1.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox1.BorderRadius = 6;
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.Red;
+            this.guna2ControlBox1.HoverState.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.Black;
+            this.guna2ControlBox1.Location = new System.Drawing.Point(905, 12);
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
+            this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
+            this.guna2ControlBox1.Size = new System.Drawing.Size(51, 40);
+            this.guna2ControlBox1.TabIndex = 107;
+            this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click);
+            // 
             // Student
             // 
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(968, 518);
+            this.ClientSize = new System.Drawing.Size(968, 649);
+            this.Controls.Add(this.guna2ControlBox1);
+            this.Controls.Add(this.guna2GradientButton15);
+            this.Controls.Add(this.searchbox);
             this.Controls.Add(this.guna2GradientButton14);
             this.Controls.Add(this.guna2GradientButton12);
             this.Controls.Add(this.guna2GradientButton13);
@@ -771,5 +846,8 @@ namespace WindowsFormsApp1
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton12;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton13;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton14;
+        private Guna.UI2.WinForms.Guna2TextBox searchbox;
+        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton15;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
     }
 }

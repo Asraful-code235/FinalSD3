@@ -74,6 +74,7 @@ namespace WindowsFormsApp1
 
         private void Teacher_Load(object sender, EventArgs e)
         {
+            searchbox1.Visible = false;
             Department();
             populate();
         }
@@ -137,6 +138,35 @@ namespace WindowsFormsApp1
             {
                 MessageBox.Show(" Teacher not detected");
             }
+        }
+
+        private void guna2GradientButton12_Click(object sender, EventArgs e)
+        {
+            populate();
+        }
+
+        private void guna2GradientButton15_Click(object sender, EventArgs e)
+        {
+            searchbox1.Visible = true;
+            searchbox1.BringToFront();
+
+        }
+
+        private void searchbox1_TextChanged(object sender, EventArgs e)
+        {
+            con.Open();
+            string query = "select * from  TeacherTb1 where TeacherId = '" + searchbox1.Text + "'";
+            SqlDataAdapter sda4 = new SqlDataAdapter(query, con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda4);
+            var ds3 = new DataSet();
+            sda4.Fill(ds3);
+           tDataGV.DataSource = ds3.Tables[0];
+            con.Close();
+        }
+
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

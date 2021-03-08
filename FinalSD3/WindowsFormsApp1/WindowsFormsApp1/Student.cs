@@ -19,6 +19,7 @@ namespace WindowsFormsApp1
         }
         SqlConnection con = new SqlConnection(@"Data Source=ASRAFUL;Initial Catalog=Sd2;Integrated Security=True");
         SqlCommand cmd;
+        DataTable dt;
         private void fillDepartment()
         {
             con.Open();
@@ -192,6 +193,7 @@ namespace WindowsFormsApp1
         string txt;
         private void Student_Load_1(object sender, EventArgs e)
         {
+            searchbox.Visible = false;
             populate();
             fillDepartment();
           
@@ -263,6 +265,30 @@ namespace WindowsFormsApp1
         private void guna2GradientButton14_Click(object sender, EventArgs e)
         {
             duelist();
+        }
+
+        private void guna2GradientButton15_Click(object sender, EventArgs e)
+        {
+            searchbox.Visible = true;
+            searchbox.BringToFront();
+            
+        }
+        
+        private void searchbox_TextChanged(object sender, EventArgs e)
+        {
+            con.Open();
+            string query = "select * from  StudentTb1 where Stdid = '"+searchbox.Text+"'";
+            SqlDataAdapter sda4 = new SqlDataAdapter(query, con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda4);
+            var ds3 = new DataSet();
+            sda4.Fill(ds3);
+            stdcv.DataSource = ds3.Tables[0];
+            con.Close();
+        }
+
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
