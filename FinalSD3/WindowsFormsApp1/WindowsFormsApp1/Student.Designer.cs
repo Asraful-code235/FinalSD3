@@ -52,7 +52,6 @@ namespace WindowsFormsApp1
             this.guna2GradientButton10 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton11 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.GenderCv = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.stdDate = new System.Windows.Forms.DateTimePicker();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -62,6 +61,7 @@ namespace WindowsFormsApp1
             this.searchbox = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2GradientButton15 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.stdDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.stdcv)).BeginInit();
             this.SuspendLayout();
             // 
@@ -437,7 +437,7 @@ namespace WindowsFormsApp1
             this.stdphone1.ForeColor = System.Drawing.Color.Blue;
             this.stdphone1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.stdphone1.HoverState.Parent = this.stdphone1;
-            this.stdphone1.Location = new System.Drawing.Point(188, 337);
+            this.stdphone1.Location = new System.Drawing.Point(188, 324);
             this.stdphone1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.stdphone1.Name = "stdphone1";
             this.stdphone1.PasswordChar = '\0';
@@ -494,7 +494,7 @@ namespace WindowsFormsApp1
             this.guna2GradientButton9.HoverState.Parent = this.guna2GradientButton9;
             this.guna2GradientButton9.Image = ((System.Drawing.Image)(resources.GetObject("guna2GradientButton9.Image")));
             this.guna2GradientButton9.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2GradientButton9.Location = new System.Drawing.Point(28, 337);
+            this.guna2GradientButton9.Location = new System.Drawing.Point(28, 324);
             this.guna2GradientButton9.Name = "guna2GradientButton9";
             this.guna2GradientButton9.ShadowDecoration.Parent = this.guna2GradientButton9;
             this.guna2GradientButton9.Size = new System.Drawing.Size(137, 45);
@@ -583,14 +583,6 @@ namespace WindowsFormsApp1
             this.GenderCv.ShadowDecoration.Parent = this.GenderCv;
             this.GenderCv.Size = new System.Drawing.Size(214, 36);
             this.GenderCv.TabIndex = 87;
-            // 
-            // stdDate
-            // 
-            this.stdDate.CalendarTitleBackColor = System.Drawing.Color.Lime;
-            this.stdDate.Location = new System.Drawing.Point(188, 284);
-            this.stdDate.Name = "stdDate";
-            this.stdDate.Size = new System.Drawing.Size(214, 22);
-            this.stdDate.TabIndex = 88;
             // 
             // guna2HtmlLabel1
             // 
@@ -759,10 +751,33 @@ namespace WindowsFormsApp1
             this.guna2ControlBox1.TabIndex = 107;
             this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click);
             // 
+            // stdDate
+            // 
+            this.stdDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.stdDate.BorderColor = System.Drawing.Color.Lime;
+            this.stdDate.BorderRadius = 5;
+            this.stdDate.BorderThickness = 2;
+            this.stdDate.CheckedState.Parent = this.stdDate;
+            this.stdDate.FillColor = System.Drawing.Color.White;
+            this.stdDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
+            this.stdDate.ForeColor = System.Drawing.Color.Gray;
+            this.stdDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.stdDate.HoverState.Parent = this.stdDate;
+            this.stdDate.Location = new System.Drawing.Point(188, 270);
+            this.stdDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.stdDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.stdDate.Name = "stdDate";
+            this.stdDate.ShadowDecoration.Parent = this.stdDate;
+            this.stdDate.Size = new System.Drawing.Size(214, 60);
+            this.stdDate.TabIndex = 108;
+            this.stdDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.stdDate.Value = new System.DateTime(2021, 2, 22, 23, 14, 32, 956);
+            // 
             // Student
             // 
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(968, 649);
+            this.Controls.Add(this.stdDate);
             this.Controls.Add(this.guna2ControlBox1);
             this.Controls.Add(this.guna2GradientButton15);
             this.Controls.Add(this.searchbox);
@@ -770,7 +785,6 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.guna2GradientButton12);
             this.Controls.Add(this.guna2GradientButton13);
             this.Controls.Add(this.guna2HtmlLabel1);
-            this.Controls.Add(this.stdDate);
             this.Controls.Add(this.GenderCv);
             this.Controls.Add(this.guna2GradientButton11);
             this.Controls.Add(this.guna2GradientButton10);
@@ -839,7 +853,6 @@ namespace WindowsFormsApp1
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton10;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton11;
         private Guna.UI2.WinForms.Guna2ComboBox GenderCv;
-        private System.Windows.Forms.DateTimePicker stdDate;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private System.Windows.Forms.Timer timer1;
@@ -849,5 +862,6 @@ namespace WindowsFormsApp1
         private Guna.UI2.WinForms.Guna2TextBox searchbox;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton15;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
+        private Guna.UI2.WinForms.Guna2DateTimePicker stdDate;
     }
 }

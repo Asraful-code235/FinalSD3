@@ -188,16 +188,51 @@ namespace WindowsFormsApp1
         private void Interface_Load_1(object sender, EventArgs e)
         {
             this.timer1.Start();
-            panel6.Visible = false;
+            Studentpanel.Visible = false;
+            Teacherpanel.Visible = false;
+            Departmentpanel.Visible = false;
+            Paymentpanel.Visible = false;
+            Userpanel.Visible = false;
+          
+            con.Open();
+            SqlDataAdapter sda1 = new SqlDataAdapter("select count(*)from StudentTb1", con);
+            DataTable dt1 = new DataTable();
+            sda1.Fill(dt1);
+            stdlv.Text = dt1.Rows[0][0].ToString();
+            SqlDataAdapter sda2 = new SqlDataAdapter("select count(*)from TeacherTb1", con);
+            DataTable dt2 = new DataTable();
+            sda2.Fill(dt2);
+           teacherlv.Text = dt2.Rows[0][0].ToString();
+            SqlDataAdapter sda3 = new SqlDataAdapter("select count(*)from DepartmentTb1", con);
+            DataTable dt3 = new DataTable();
+            sda3.Fill(dt3);
+            deplv.Text = dt3.Rows[0][0].ToString();
+            SqlDataAdapter sda4 = new SqlDataAdapter("select count(*)from FeesTb1", con);
+            DataTable dt4 = new DataTable();
+            sda4.Fill(dt4);
+            paymentlv.Text = dt4.Rows[0][0].ToString();
+            SqlDataAdapter sda5 = new SqlDataAdapter("select count(*)from UserTable", con);
+            DataTable dt5 = new DataTable();
+            sda5.Fill(dt5);
+            userlv.Text = dt5.Rows[0][0].ToString();
+            con.Close();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            this.progressBar1.Increment(20);
-            if(progressBar1.Value ==100)
+            this.progressBar1.Increment(30);
+            if (progressBar1.Value ==100)
             {
-                panel6.Visible = true;
+                 
+                Studentpanel.Visible = true;
+                Teacherpanel.Visible = true;
+                Departmentpanel.Visible = true;
+                Paymentpanel.Visible = true;
+                Userpanel.Visible = true;
+                progressBar1.Visible = false;
             }
+            
+
         }
 
         private void guna2GradientButton1_Click_2(object sender, EventArgs e)
@@ -250,6 +285,21 @@ namespace WindowsFormsApp1
             Login login = new Login();
             login.Show();
             this.Hide();
+        }
+
+        private void panel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2ControlBox1_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void deplv_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
