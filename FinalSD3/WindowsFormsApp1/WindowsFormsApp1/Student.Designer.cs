@@ -437,7 +437,7 @@ namespace WindowsFormsApp1
             this.stdphone1.ForeColor = System.Drawing.Color.Blue;
             this.stdphone1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.stdphone1.HoverState.Parent = this.stdphone1;
-            this.stdphone1.Location = new System.Drawing.Point(188, 324);
+            this.stdphone1.Location = new System.Drawing.Point(188, 327);
             this.stdphone1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.stdphone1.Name = "stdphone1";
             this.stdphone1.PasswordChar = '\0';

@@ -193,7 +193,12 @@ namespace WindowsFormsApp1
             Departmentpanel.Visible = false;
             Paymentpanel.Visible = false;
             Userpanel.Visible = false;
-          
+            guna2GradientButton1.Visible = false;
+            guna2GradientButton2.Visible = false;
+            guna2GradientButton3.Visible = false;
+            guna2GradientButton4.Visible = false;
+            guna2GradientButton5.Visible = false;
+
             con.Open();
             SqlDataAdapter sda1 = new SqlDataAdapter("select count(*)from StudentTb1", con);
             DataTable dt1 = new DataTable();
@@ -220,18 +225,45 @@ namespace WindowsFormsApp1
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            this.progressBar1.Increment(30);
-            if (progressBar1.Value ==100)
+            this.progressBar1.Increment(10);
+            if (progressBar1.Value >=20)
             {
                  
                 Studentpanel.Visible = true;
+                guna2GradientButton1.Visible = true;
+             
+
+            }
+            if (progressBar1.Value >= 40)
+            {
                 Teacherpanel.Visible = true;
+                guna2GradientButton2.Visible = true;
+               
+            }
+            if(progressBar1.Value>=60)
+            {
                 Departmentpanel.Visible = true;
+                guna2GradientButton3.Visible = true;
+             
+
+            }
+            if (progressBar1.Value >= 80)
+            {
+           
                 Paymentpanel.Visible = true;
+                guna2GradientButton4.Visible = true;
+              
+
+
+            }
+            if (progressBar1.Value >= 100)
+            {
+               
                 Userpanel.Visible = true;
+                guna2GradientButton5.Visible = true;
                 progressBar1.Visible = false;
             }
-            
+
 
         }
 
@@ -300,6 +332,16 @@ namespace WindowsFormsApp1
         private void deplv_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void label4_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Teacherpanel_Paint(object sender, PaintEventArgs e)
+        {
+            this.BringToFront();
         }
     }
 }

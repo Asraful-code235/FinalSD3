@@ -283,7 +283,7 @@ namespace WindowsFormsApp1
             this.AmountTb.ForeColor = System.Drawing.Color.Blue;
             this.AmountTb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.AmountTb.HoverState.Parent = this.AmountTb;
-            this.AmountTb.Location = new System.Drawing.Point(145, 279);
+            this.AmountTb.Location = new System.Drawing.Point(145, 269);
             this.AmountTb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AmountTb.Name = "AmountTb";
             this.AmountTb.PasswordChar = '\0';
@@ -415,7 +415,7 @@ namespace WindowsFormsApp1
             this.guna2GradientButton4.Image = ((System.Drawing.Image)(resources.GetObject("guna2GradientButton4.Image")));
             this.guna2GradientButton4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2GradientButton4.ImageSize = new System.Drawing.Size(25, 25);
-            this.guna2GradientButton4.Location = new System.Drawing.Point(8, 278);
+            this.guna2GradientButton4.Location = new System.Drawing.Point(8, 272);
             this.guna2GradientButton4.Name = "guna2GradientButton4";
             this.guna2GradientButton4.ShadowDecoration.Parent = this.guna2GradientButton4;
             this.guna2GradientButton4.Size = new System.Drawing.Size(130, 45);
